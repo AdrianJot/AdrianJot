@@ -7,11 +7,11 @@
     hole_diam = 13; //diameter of the center hole
     height = 6; //total height of the holder
     wall = 0.64; // wall size, number should be slightly bigger than nozzle size
-    resolution = 10; //best to be divisible by 4
+    resolution = 20; //best to be divisible by 4
     row = 3; //cells in row
     col = 3; //cells in column
-    type = "square"; // "square" or "hex" type of holder formation
-    box = "on"; // "off"
+    type = "hex"; // "square" or "hex" type of holder formation
+     
     //End settings
 
     diameter = inside_diam + wall;
@@ -88,10 +88,4 @@ if (type == "hex") {
 if (type == "square") {
     square();      
     }
-if (box == "on" && type == "square"){
-    difference(){
-        box();
-        square_inside();
-    }
 
-}
