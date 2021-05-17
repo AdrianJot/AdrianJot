@@ -1,7 +1,8 @@
     //
     // units: mm
     //
-    //Settings:
+    // Settings
+    
     bottom_thickness = 0.3; //thickness of the bottom holder part
     inside_diam = 18.7; //inside diameter of the cell holder
     hole_diam = 13; //diameter of the center hole
